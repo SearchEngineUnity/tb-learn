@@ -2,7 +2,7 @@
 
 ## Links to the deployed frontend and backend
 
-* [Sanity (CMS) Studio](https://sitebuilderv2.sanity.studio/desk)
+* [Sanity (CMS) Studio](https://tblearn.sanity.studio/desk)
 * [Gatsby Preview hosted on Gatsby Cloud](https://preview-sitebuilderv2.gatsbyjs.io/)
 * [Live site hosted on Gatsby Cloud](https://sitebuilderv2.gatsbyjs.io/)
 
