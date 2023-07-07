@@ -26,13 +26,13 @@ module.exports = {
   pathPrefix: `/learn`,
   plugins: [
     'gatsby-plugin-react-helmet',
-    // {
-    //   resolve: 'gatsby-plugin-google-tagmanager',
-    //   options: {
-    //     id: 'GTM-5GLG7DW',
-    //     enableWebVitalsTracking: true,
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-NB8W47V',
+        enableWebVitalsTracking: true,
+      },
+    },
     {
       resolve: `gatsby-theme-material-ui`,
       options: {
