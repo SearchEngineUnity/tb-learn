@@ -1,6 +1,6 @@
 [build]
   base = "packages/web/"
-  command = "npm run build"
+  command = "npm run build:app"
   publish = "public"
   environment = { NODE_VERSION = "18.13.0" }
 
