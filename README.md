@@ -3,7 +3,7 @@
 ## Links to the deployed frontend and backend
 
 * [Sanity (CMS) Studio](https://tblearn.sanity.studio/desk)
-* [Gatsby Preview hosted on Gatsby Cloud](https://preview-tblearnmain.gatsbyjs.io/)
+* [Gatsby Preview hosted on Gatsby Cloud](https://preview-tblearn.gatsbyjs.io/)
 * [Live site hosted on Gatsby Cloud](https://sitebuilderv2.gatsbyjs.io/)
 
 ## How to install and run the project
