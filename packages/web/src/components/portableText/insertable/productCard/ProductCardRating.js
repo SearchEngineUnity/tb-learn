@@ -73,8 +73,7 @@ function ProductCardRating({ rating }) {
       <img
         src={starRating}
         alt="star-rating"
-        height="24px"
-        style={{ verticalAlign: 'middle' }}
+        style={{ verticalAlign: 'middle', height: '24px' }}
         loading="eager"
       />
       <Box
