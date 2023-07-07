@@ -9,7 +9,15 @@ import Content from '../../serializer/NoIndentSerializer';
 import ConditionalButton from '../../../buttons/ConditionalButton';
 
 export default function DefaultProductGridTile({ pageJumpText, tile }) {
-  const { specialTagText, tileImage, name, content, btnText, btnLink, jumpLink } = tile;
+  const {
+    specialTagText,
+    tileImage,
+    name,
+    content,
+    btnText,
+    btnLink,
+    jumpLink: { hashId },
+  } = tile;
   const { alt } = tileImage;
 
   return (
@@ -87,14 +95,14 @@ export default function DefaultProductGridTile({ pageJumpText, tile }) {
           disableElevation
           borderRadius="0px"
         />
-        {pageJumpText && jumpLink && (
+        {pageJumpText && hashId && (
           <Box
             sx={{
               padding: '16px 16px 0px',
             }}
           >
             <Link
-              href={`#${jumpLink}`}
+              href={`#${hashId}`}
               underline="none"
               color="textSecondary"
               sx={{
