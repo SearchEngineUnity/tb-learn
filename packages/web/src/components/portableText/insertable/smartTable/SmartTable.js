@@ -24,7 +24,7 @@ import TableSmartUnorderedList from '../TableSmartUnorderedList';
 import { mapMuiBtnToProps, mapVideoToProps } from '../../../../lib/mapToProps';
 
 const stickyCellStyle = {
-  bgcolor: 'background.paper',
+  bgcolor: 'inherit',
   left: 0,
   position: 'sticky',
   zIndex: 1,
@@ -116,7 +116,7 @@ function SmartTable({ smartTable }) {
         size="small"
         aria-label={title}
         role="table"
-        sx={{ tableLayout: 'fixed', borderCollapse: 'separate' }}
+        sx={{ tableLayout: 'fixed', borderCollapse: 'separate', mb: 0 }}
       >
         <colgroup>
           {colgroup
@@ -146,6 +146,8 @@ function SmartTable({ smartTable }) {
                 } else if (index === 0) {
                   if (cell._type === 'splitCell') {
                     style = { ...splitStyle, ...colHeadStyle };
+                  } else {
+                    style = { ...colHeadStyle };
                   }
                 } else {
                   style = { ...colHeadStyle };
