@@ -74,10 +74,10 @@ function ConditionalButton({
             },
             contained: {
               '&:hover': {
-                color: contrastTextColor,
+                color: contrastTextColor || theme.palette.primary.contrastText,
               },
               '&:focus': {
-                color: contrastTextColor,
+                color: contrastTextColor || theme.palette.primary.contrastText,
                 textDecoration: 'none',
               },
             },

@@ -29,6 +29,17 @@ export default function DefaultProductGridTile({ pageJumpText, tile }) {
         flexDirection: { xs: 'column', sm: 'row', lg: 'column' },
         flexWrap: 'wrap',
         height: '100%',
+        '& .pt-link': {
+          color: 'primary.main',
+          textDecorationColor: 'currentcolor',
+        },
+        '& .caption-text': {
+          color: 'text.primary',
+        },
+        '& .caption-link': {
+          color: 'text.primary',
+          textDecorationColor: 'currentcolor',
+        },
       }}
     >
       <CardHeader
