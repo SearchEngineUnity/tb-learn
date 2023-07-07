@@ -23,18 +23,18 @@ export default defineConfig({
     dashboardTool({
       widgets: [
         projectInfoWidget(),
-        // netlifyWidget({
-        //   title: 'My Netlify deploys',
-        //   sites: [
-        //     {
-        //       title: 'Site Builder V2',
-        //       apiId: 'e978dfee-c169-45df-9cea-aa427232a7f8',
-        //       buildHookId: '63e28e14258d2d0fddde9ef4',
-        //       name: 'tb-learn',
-        //     },
-        //   ],
-        //   layout: { width: 'small', height: 'small' },
-        // }),
+        netlifyWidget({
+          title: 'My Netlify deploys',
+          sites: [
+            {
+              title: 'TB/learn',
+              apiId: 'e098a902-176a-46ef-9ca6-f350d24ed353',
+              buildHookId: '64a78c10ef91862305e752a2',
+              name: 'tblearn',
+            },
+          ],
+          layout: { width: 'small', height: 'small' },
+        }),
         gatsbyWidget({
           site: {
             title: 'tb-learn Preview',
