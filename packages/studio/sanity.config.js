@@ -23,30 +23,30 @@ export default defineConfig({
     dashboardTool({
       widgets: [
         projectInfoWidget(),
-        // netlifyWidget({
-        //   title: 'My Netlify deploys',
-        //   sites: [
-        //     {
-        //       title: 'Site Builder V2',
-        //       apiId: 'e978dfee-c169-45df-9cea-aa427232a7f8',
-        //       buildHookId: '63e28e14258d2d0fddde9ef4',
-        //       name: 'tb-learn',
-        //     },
-        //   ],
-        //   layout: { width: 'small', height: 'small' },
-        // }),
-        // gatsbyWidget({
-        //   site: {
-        //     title: 'tb-learn Preview',
-        //     name: 'tb-learn-preview',
-        //     id: 'tb-learn-preview',
-        //     organizationId: 'd7d268c0-3157-4cab-a651-e456e34643bb',
-        //     url: 'https://preview-sitebuilderv2.gatsbyjs.io',
-        //     adminUrl:
-        //       'https://www.gatsbyjs.com/dashboard/d7d268c0-3157-4cab-a651-e456e34643bb/sites/b3aea1e1-5265-4f8e-a477-52211e5bdb3c/cmsPreview',
-        //     buildHookId: 'b3aea1e1-5265-4f8e-a477-52211e5bdb3c',
-        //   },
-        // }),
+        netlifyWidget({
+          title: 'My Netlify deploys',
+          sites: [
+            {
+              title: 'TB/learn',
+              apiId: 'e098a902-176a-46ef-9ca6-f350d24ed353',
+              buildHookId: '64a78c10ef91862305e752a2',
+              name: 'tblearn',
+            },
+          ],
+          layout: { width: 'small', height: 'small' },
+        }),
+        gatsbyWidget({
+          site: {
+            title: 'tb-learn Preview',
+            name: 'tb-learn-preview',
+            id: 'tb-learn-preview',
+            organizationId: 'd7d268c0-3157-4cab-a651-e456e34643bb',
+            url: 'https://preview-tblearn.gatsbyjs.io/',
+            adminUrl:
+              'https://www.gatsbyjs.com/dashboard/d7d268c0-3157-4cab-a651-e456e34643bb/sites/64e0eaa0-6fe3-4311-af21-a8cc9d9d4d1a/cmsPreview',
+            buildHookId: '64e0eaa0-6fe3-4311-af21-a8cc9d9d4d1a',
+          },
+        }),
         projectUsersWidget(),
       ],
     }),
