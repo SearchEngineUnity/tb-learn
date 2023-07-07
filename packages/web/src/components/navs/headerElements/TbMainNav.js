@@ -725,6 +725,71 @@ export default function MyMainNav() {
                         <div className="row">
                           <div className="column medium-6 large-4 xlarge-3">
                             <a
+                              href="https://techboomers.com/best-ticket-resale-sites-for-sellers"
+                              className="card-link"
+                            >
+                              <div className="card card-tall">
+                                <img
+                                  width={240}
+                                  height={150}
+                                  src="https://techboomers.com/wp-content/uploads/2023/07/concert-audience-1-240x150.jpg"
+                                  className="category-blue wp-post-image"
+                                  alt="Amazon Alternatives in Belgium"
+                                  decoding="async"
+                                  loading="lazy"
+                                />
+                                <div className="card-section">
+                                  <h5>10 Best Ticket Resale Sites Ranked for Sellers in 2023</h5>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div className="column medium-6 large-4 xlarge-3">
+                            <a
+                              href="https://techboomers.com/ticketmaster-vs-stubhub"
+                              className="card-link"
+                            >
+                              <div className="card card-tall">
+                                <img
+                                  width={240}
+                                  height={150}
+                                  src="https://techboomers.com/wp-content/uploads/2023/01/live-concert-240x150.jpg"
+                                  className="category-blue wp-post-image"
+                                  alt="Amazon Alternatives in the Netherlands"
+                                  decoding="async"
+                                  loading="lazy"
+                                />
+                                <div className="card-section">
+                                  <h5>Ticketmaster vs StubHub in 2023: Fees, Refunds & More</h5>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div className="column medium-6 large-4 xlarge-3 show-for-large">
+                            <a
+                              href="https://techboomers.com/learn/selling-on-ticketmaster-vs-stubhub"
+                              className="card-link"
+                            >
+                              <div className="card card-tall">
+                                <img
+                                  width={240}
+                                  height={150}
+                                  src="https://techboomers.com/wp-content/uploads/2023/01/concert-audience-240x150.jpg"
+                                  className="category-blue wp-post-image"
+                                  alt="Amazon alternatives in Pakistan"
+                                  decoding="async"
+                                  loading="lazy"
+                                />
+                                <div className="card-section">
+                                  <h5>
+                                    Ticketmaster vs StubHub for Sellers: Fees, Policies, & More
+                                  </h5>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div className="column medium-6 large-4 xlarge-3 show-for-xlarge">
+                            <a
                               href="https://techboomers.com/amazon-alternative-belgium"
                               className="card-link"
                             >
@@ -734,7 +799,7 @@ export default function MyMainNav() {
                                   height={150}
                                   src="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-belgium-240x150.png"
                                   className="category-blue wp-post-image"
-                                  alt="Amazon Alternatives in Belgium"
+                                  alt="Amazon alternatives in Germany"
                                   decoding="async"
                                   loading="lazy"
                                 />
@@ -746,81 +811,11 @@ export default function MyMainNav() {
                               </div>
                             </a>
                           </div>
-                          <div className="column medium-6 large-4 xlarge-3">
-                            <a
-                              href="https://techboomers.com/netherlands-amazon-alternative"
-                              className="card-link"
-                            >
-                              <div className="card card-tall">
-                                <img
-                                  width={240}
-                                  height={150}
-                                  src="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-netherlands-240x150.png"
-                                  className="category-blue wp-post-image"
-                                  alt="Amazon Alternatives in the Netherlands"
-                                  decoding="async"
-                                  loading="lazy"
-                                />
-                                <div className="card-section">
-                                  <h5>
-                                    14 Amazon Alternatives in the Netherlands for Online Shopping
-                                  </h5>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className="column medium-6 large-4 xlarge-3 show-for-large">
-                            <a
-                              href="https://techboomers.com/amazon-alternative-pakistan"
-                              className="card-link"
-                            >
-                              <div className="card card-tall">
-                                <img
-                                  width={240}
-                                  height={150}
-                                  src="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-pakistan-240x150.png"
-                                  className="category-blue wp-post-image"
-                                  alt="Amazon alternatives in Pakistan"
-                                  decoding="async"
-                                  loading="lazy"
-                                />
-                                <div className="card-section">
-                                  <h5>
-                                    22 Amazon Alternatives in Pakistan for Buying Popular Products
-                                  </h5>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className="column medium-6 large-4 xlarge-3 show-for-xlarge">
-                            <a
-                              href="https://techboomers.com/amazon-alternative-germany"
-                              className="card-link"
-                            >
-                              <div className="card card-tall">
-                                <img
-                                  width={240}
-                                  height={150}
-                                  src="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-germany-240x150.png"
-                                  className="category-blue wp-post-image"
-                                  alt="Amazon alternatives in Germany"
-                                  decoding="async"
-                                  loading="lazy"
-                                />
-                                <div className="card-section">
-                                  <h5>
-                                    17 Amazon Alternatives in Germany for Great Products &amp;
-                                    Discounts
-                                  </h5>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
                         </div>
                         <div className="row">
                           <div className="column medium-12 large-8 xlarge-6">
                             <a
-                              href="https://techboomers.com/amazon-alternative-thailand"
+                              href="https://techboomers.com/netherlands-amazon-alternative"
                               className="card-link"
                             >
                               <div className="row card horizontal collapse card-medium">
@@ -828,12 +823,12 @@ export default function MyMainNav() {
                                   <img
                                     width={200}
                                     height={150}
-                                    src="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-thailand-200x150.png"
+                                    src="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-netherlands-240x150.png"
                                     className="attachment-best-card size-best-card wp-post-image"
                                     alt="Amazon alternatives in Thailand"
                                     decoding="async"
                                     loading="lazy"
-                                    srcSet="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-thailand-200x150.png 200w, https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-thailand-420x315.png 420w"
+                                    srcSet="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-netherlands-200x150.png 200w, https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-netherlands-420x315.png 420w"
                                     sizes="(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 200px"
                                   />
                                 </div>
@@ -841,8 +836,7 @@ export default function MyMainNav() {
                                   <div className="card-divider category-blue" />
                                   <div className="card-section">
                                     <h5>
-                                      9 Amazon Alternatives in Thailand for Great Deals On
-                                      Everything
+                                      14 Amazon Alternatives in the Netherlands for Online Shopping
                                     </h5>
                                   </div>
                                 </div>
@@ -851,7 +845,7 @@ export default function MyMainNav() {
                           </div>
                           <div className="column medium-12 large-8 xlarge-6 show-for-xlarge">
                             <a
-                              href="https://techboomers.com/amazon-alternative-singapore"
+                              href="https://techboomers.com/amazon-alternative-pakistan"
                               className="card-link"
                             >
                               <div className="row card horizontal collapse card-medium">
@@ -859,12 +853,12 @@ export default function MyMainNav() {
                                   <img
                                     width={200}
                                     height={150}
-                                    src="https://techboomers.com/wp-content/uploads/2022/05/amazon-alternatives-singapore-200x150.png"
+                                    src="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-pakistan-240x150.png"
                                     className="attachment-best-card size-best-card wp-post-image"
-                                    alt="Amazon Alternatives in Singapore"
+                                    alt="Amazon alternatives in Pakistan"
                                     decoding="async"
                                     loading="lazy"
-                                    srcSet="https://techboomers.com/wp-content/uploads/2022/05/amazon-alternatives-singapore-200x150.png 200w, https://techboomers.com/wp-content/uploads/2022/05/amazon-alternatives-singapore-420x315.png 420w"
+                                    srcSet="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-pakistan-200x150.png 200w, https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-pakistan-420x315.png 420w"
                                     sizes="(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 200px"
                                   />
                                 </div>
@@ -872,7 +866,7 @@ export default function MyMainNav() {
                                   <div className="card-divider category-blue" />
                                   <div className="card-section">
                                     <h5>
-                                      21 Websites Like Amazon in Singapore for Shopping Online
+                                      22 Amazon Alternatives in Pakistan for Buying Popular Products
                                     </h5>
                                   </div>
                                 </div>
