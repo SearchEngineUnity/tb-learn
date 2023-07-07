@@ -30,6 +30,7 @@ function ProductCardTopSite({ rating, image, infoList, btnSet }) {
               image={imageData}
               alt={image?.alt}
               style={{ display: 'block', maxWidth: '100%', maxHeight: '240px' }}
+              objectPosition="left"
               objectFit="contain"
             />
             {image.caption && (
@@ -37,7 +38,6 @@ function ProductCardTopSite({ rating, image, infoList, btnSet }) {
                 component={Caption}
                 as="figcaption"
                 sx={{
-                  textAlign: 'center',
                   '& .pt-link': {
                     color: 'text.primary',
                     textDecorationColor: 'currentcolor',
