@@ -4,7 +4,7 @@
 
 * [Sanity (CMS) Studio](https://tblearn.sanity.studio/desk)
 * [Gatsby Preview hosted on Gatsby Cloud](https://preview-tblearn.gatsbyjs.io/)
-* [Live site hosted on Gatsby Cloud](https://sitebuilderv2.gatsbyjs.io/)
+* [Live site hosted on Gatsby Cloud](https://tblearn.gatsbyjs.io/)
 
 ## How to install and run the project
 
@@ -82,9 +82,9 @@ lerna add a --scope=b
 lerna add a --scope=b --scope=c --scope=d  
 ```
 
-Here’s a concrete example installing **dotenv** as a dependency to the **@siteBuilderV2/web** package:
+Here’s a concrete example installing **dotenv** as a dependency to the **@tb-learn/web** package:
 ```
-lerna add dotenv --scope=@siteBuilderV2/web  
+lerna add dotenv --scope=@tb-learn/web  
 ```
 
 Run `npm run clean` should you accidentally installed a dependency inside the package itself then rerun `npm install --legacy-peer-deps` from the root folder.

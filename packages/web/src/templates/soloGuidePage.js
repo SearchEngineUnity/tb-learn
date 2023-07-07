@@ -116,7 +116,9 @@ function SoloGuidePage({ data, location }) {
       heroImage={data?.guide?.hero?.image?.asset?.url}
     >
       <main>
-        <Hero {...mapGuideHeroToProps(data.guide)} ref={heroRef} />
+        <Box sx={{ maxWidth: '1400px', margin: '0 auto' }}>
+          <Hero {...mapGuideHeroToProps(data.guide)} ref={heroRef} />
+        </Box>
         {isVisible && <ProgressBar />}
         <Box sx={{ my: 3 }}>
           <Container maxWidth="lg">

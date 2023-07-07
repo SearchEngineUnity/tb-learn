@@ -12,7 +12,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "build:app": "npm run clean && gatsby build --prefix-paths && npm run move",
+    "move": "cd public && mkdir learn | mv * learn"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
