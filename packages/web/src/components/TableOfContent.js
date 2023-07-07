@@ -8,7 +8,7 @@ function TableOfContent({ toc }) {
   const { activeId } = useHeadsObserver();
 
   return (
-    <Box sx={{ display: 'block', bgcolor: 'grey[100]', position: 'sticky', top: 0, padding: 3 }}>
+    <Box sx={{ display: 'block', bgcolor: 'grey.100', position: 'sticky', top: 0, padding: 3 }}>
       <Typography component="p" variant="h4" gutterBottom>
         Table of Contents
       </Typography>
