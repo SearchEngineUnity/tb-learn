@@ -72,6 +72,15 @@ function ConditionalButton({
                 },
               },
             },
+            contained: {
+              '&:hover': {
+                color: contrastTextColor,
+              },
+              '&:focus': {
+                color: contrastTextColor,
+                textDecoration: 'none',
+              },
+            },
           },
         },
       },
