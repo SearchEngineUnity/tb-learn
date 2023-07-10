@@ -23,9 +23,13 @@ function ProductCardTopSite({ rating, image, infoList, btnSet }) {
 
   return (
     <Box sx={{ m: 3 }}>
-      <Grid container spacing={2} alignItems="center">
+      <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
-          <Box component={Box} as="figure" sx={{ m: 0 }}>
+          <Box
+            component={Box}
+            as="figure"
+            sx={{ m: 0, display: { xs: 'flex', sm: 'block', justifyContent: 'center' } }}
+          >
             <GatsbyImage
               image={imageData}
               alt={image?.alt}
