@@ -79,7 +79,7 @@ function ProductCardRating({ rating }) {
       <Box
         component="span"
         sx={{ px: 1, verticalAlign: 'middle', fontSize: '20px' }}
-      >{`${rating}`}</Box>
+      >{`${rating.toFixed(1)}`}</Box>
     </Box>
   );
 }
