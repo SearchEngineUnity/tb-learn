@@ -74,7 +74,7 @@ function ProductCardTopSite({ rating, image, infoList, btnSet }) {
           </Box>
         </Grid>
       </Grid>
-      <Box sx={{ mt: 0.5, py: 1, display: { xs: 'flex', sm: 'block', justifyContent: 'center' } }}>
+      <Box sx={{ mt: 0.5, display: { xs: 'flex', sm: 'block', justifyContent: 'center' } }}>
         <ProductCardRating rating={rating} />
       </Box>
       <Box

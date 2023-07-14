@@ -76,10 +76,9 @@ function ProductCardRating({ rating }) {
         style={{ verticalAlign: 'middle', height: '24px' }}
         loading="eager"
       />
-      <Box
-        component="span"
-        sx={{ px: 1, verticalAlign: 'middle', fontSize: '20px' }}
-      >{`${rating.toFixed(1)}`}</Box>
+      <Box component="span" sx={{ px: 1, verticalAlign: 'middle', fontSize: '20px' }}>
+        {`${rating.toFixed(1)}`}
+      </Box>
     </Box>
   );
 }
