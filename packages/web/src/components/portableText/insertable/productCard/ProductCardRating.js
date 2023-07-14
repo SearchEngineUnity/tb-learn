@@ -69,17 +69,16 @@ function ProductCardRating({ rating }) {
   }
 
   return (
-    <Box component="span" sx={{ p: 0 }}>
+    <Box component="span">
       <img
         src={starRating}
         alt="star-rating"
         style={{ verticalAlign: 'middle', height: '24px' }}
         loading="eager"
       />
-      <Box
-        component="span"
-        sx={{ px: 1, verticalAlign: 'middle', fontSize: '20px' }}
-      >{`${rating.toFixed(1)}`}</Box>
+      <Box component="span" sx={{ px: 1, verticalAlign: 'middle', fontSize: '20px' }}>
+        {`${rating.toFixed(1)}`}
+      </Box>
     </Box>
   );
 }
