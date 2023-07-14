@@ -8,7 +8,7 @@ import Illustration from '../Illustration';
 import Content from '../../serializer/NoIndentSerializer';
 import ConditionalButton from '../../../buttons/ConditionalButton';
 
-export default function DefaultProductGridTile({ pageJumpText, tile }) {
+export default function SiteProductGridTile({ pageJumpText, tile }) {
   const {
     specialTagText,
     tileImage,
