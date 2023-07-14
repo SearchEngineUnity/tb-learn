@@ -167,9 +167,7 @@ function ProductCardTopeCommerce(props) {
             <Typography component={headingLevel || 'p'} variant="h4">
               {name}
             </Typography>
-            <Box sx={{ mt: 0.5, py: 1 }}>
-              <ProductCardRating rating={rating} />
-            </Box>
+            <ProductCardRating rating={rating} />
             <Box
               sx={{
                 mt: 3,

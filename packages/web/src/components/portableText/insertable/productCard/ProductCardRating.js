@@ -69,7 +69,7 @@ function ProductCardRating({ rating }) {
   }
 
   return (
-    <Box component="span">
+    <Box component="span" sx={{ p: 0 }}>
       <img
         src={starRating}
         alt="star-rating"
