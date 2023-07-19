@@ -23,12 +23,16 @@ function ProductCardTopSite({ rating, image, infoList, btnSet }) {
 
   return (
     <Box sx={{ m: 3 }}>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} sx={{ alignItems: 'center' }}>
         <Grid item xs={12} sm={6}>
           <Box
             component={Box}
             as="figure"
-            sx={{ m: 0, display: { xs: 'flex', sm: 'block', justifyContent: 'center' } }}
+            sx={{
+              m: 0,
+              flexDirection: 'column',
+              display: { xs: 'flex', sm: 'block', alignItems: 'center' },
+            }}
           >
             <GatsbyImage
               image={imageData}
@@ -53,28 +57,29 @@ function ProductCardTopSite({ rating, image, infoList, btnSet }) {
             )}
           </Box>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <Box
-            sx={{
-              display: {
-                xs: 'none',
-                sm: 'block',
-                md: 'block',
-                lg: 'block',
-                xl: 'block',
-              },
-            }}
-          >
-            {btnSet &&
-              btnSet.map((btn) => (
-                <Box key={btn._key}>
-                  <ConditionalButton {...mapMuiBtnToProps(btn)} />
-                </Box>
-              ))}
-          </Box>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          sx={{
+            display: {
+              xs: 'none',
+              sm: 'block',
+              md: 'block',
+              lg: 'block',
+              xl: 'block',
+            },
+          }}
+        >
+          {btnSet &&
+            btnSet.map((btn) => (
+              <Box key={btn._key}>
+                <ConditionalButton {...mapMuiBtnToProps(btn)} />
+              </Box>
+            ))}
         </Grid>
       </Grid>
-      <Box sx={{ mt: 0.5, display: { xs: 'flex', sm: 'block', justifyContent: 'center' } }}>
+      <Box sx={{ mt: 1, display: { xs: 'flex', sm: 'block', justifyContent: 'center' } }}>
         <ProductCardRating rating={rating} />
       </Box>
       <Box
@@ -91,12 +96,12 @@ function ProductCardTopSite({ rating, image, infoList, btnSet }) {
       >
         {btnSet &&
           btnSet.map((btn) => (
-            <Box sx={{ display: 'flex', mt: 3, justifyContent: 'center' }} key={btn._key}>
+            <Box sx={{ display: 'flex', mt: 1, justifyContent: 'center' }} key={btn._key}>
               <ConditionalButton {...mapMuiBtnToProps(btn)} />
             </Box>
           ))}
       </Box>
-      <Box sx={{ mt: 3 }}>
+      <Box sx={{ mt: 2 }}>
         <ProductInfoList infoList={infoList} />
       </Box>
     </Box>
