@@ -24,9 +24,7 @@ function ProductInfoList({ infoList }) {
             }}
           >
             <Grid item xs={4} sm={5} md={4} lg={4} sx={{ mb: 1.5 }}>
-              <Typography variant="body1" sx={{ fontWeight: 'bold' }}>
-                {item.label}:
-              </Typography>
+              <Typography variant="body1">{item.label}:</Typography>
             </Grid>
             <Grid item xs={8} sm={7} md={8} lg={8} sx={{ mb: 1.5 }}>
               <ItemText blocks={item.text} />
