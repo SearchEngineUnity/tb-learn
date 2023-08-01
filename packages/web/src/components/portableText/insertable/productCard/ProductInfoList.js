@@ -8,11 +8,10 @@ function ProductInfoList({ infoList }) {
   return (
     <>
       {infoList.map((item) => (
-        <>
+        <React.Fragment key={item._key}>
           <Grid
             container
             spacing={0}
-            key={item._key}
             sx={{
               display: {
                 xs: 'none',
@@ -33,7 +32,6 @@ function ProductInfoList({ infoList }) {
           <Box
             container
             spacing={0}
-            key={item._key}
             sx={{
               mb: 1.5,
               display: {
@@ -50,7 +48,7 @@ function ProductInfoList({ infoList }) {
             </Typography>
             <ItemText blocks={item.text} />
           </Box>
-        </>
+        </React.Fragment>
       ))}
     </>
   );
