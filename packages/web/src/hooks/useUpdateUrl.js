@@ -20,10 +20,10 @@ export function useUpdateUrl() {
     };
 
     observer.current = new IntersectionObserver(handleObserver, {
-      rootMargin: '10% 0% -75% 0px',
+      rootMargin: '-10% 0% -80% 0px',
     });
 
-    const elements = document.querySelectorAll('h1, h2');
+    const elements = document.querySelectorAll('h1, section');
     elements.forEach((elem) => observer.current.observe(elem));
 
     return () => observer.current?.disconnect();
