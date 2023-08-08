@@ -8,7 +8,7 @@ function PTHeadingTypography({ variant, id, children, noIndent }) {
       gutterBottom
       id={id}
       sx={[
-        { mt: '1.35em', scrollMargin: '45px' },
+        { mt: '1.35em' },
         noIndent && {
           '&:first-child': { display: 'inline' },
           '&:not(:first-child)': { textIndent: '0' },

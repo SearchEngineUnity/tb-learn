@@ -2,10 +2,10 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import { useHeadsObserver } from '../hooks/useHeadObserver';
+import { useSectionsObserver } from '../hooks/useSectionsObserver';
 
 function TableOfContent({ toc }) {
-  const { activeId } = useHeadsObserver();
+  const { activeId } = useSectionsObserver();
 
   return (
     <Box sx={{ display: 'block', bgcolor: 'grey.100', position: 'sticky', top: 0, padding: 3 }}>
@@ -15,7 +15,13 @@ function TableOfContent({ toc }) {
       <nav>
         <Box component="ul" sx={{ listStyleType: 'none', padding: '0px' }}>
           {toc.map((item) => (
-            <Typography component="li" key={item._key} variant="body1" sx={{ mb: 1 }}>
+            <Typography
+              component="li"
+              key={item._key}
+              variant="body1"
+              lineHeight={1.4}
+              sx={{ mb: 1.5 }}
+            >
               <Link
                 sx={
                   item.hashID === activeId && {
@@ -23,14 +29,8 @@ function TableOfContent({ toc }) {
                     fontWeight: 'bold',
                   }
                 }
-                href={`#${item.hashId}`}
+                href={`#${item.hashID}`}
                 underline="hover"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.querySelector(`#${item.hashID}`).scrollIntoView({
-                    behavior: 'smooth',
-                  });
-                }}
               >
                 {item.title}
               </Link>

@@ -24,7 +24,8 @@ import TableSmartUnorderedList from '../TableSmartUnorderedList';
 import { mapMuiBtnToProps, mapVideoToProps } from '../../../../lib/mapToProps';
 
 const stickyCellStyle = {
-  bgcolor: 'inherit',
+  backgroundColor: 'inherit',
+  color: 'inherit',
   left: 0,
   position: 'sticky',
   zIndex: 1,
@@ -32,7 +33,7 @@ const stickyCellStyle = {
 };
 
 const colHeadStyle = {
-  verticalAlign: 'bottom',
+  backgroundColor: 'secondary.light',
   fontWeight: 'medium',
   '& .pt-heading': { fontWeight: 'medium' },
 };
@@ -45,6 +46,18 @@ const rowHeadStyle = {
 const splitStyle = {
   background:
     'linear-gradient(to top right, rgba(0,0,0,0) 0%, rgba(0,0,0,0) calc(50% - 1px), rgba(224, 224, 224, 1) 50%, rgba(0,0,0,0) calc(50% + 1px), rgba(0,0,0,0) 100%)',
+};
+
+const rowStyle = {
+  '&:nth-of-type(even)': {
+    backgroundColor: 'grey.200',
+  },
+  '&:nth-of-type(odd)': {
+    backgroundColor: 'background.paper',
+  },
+  '&:last-child td, &:last-child th': {
+    borderBottom: 0,
+  },
 };
 
 const componentMapping = {
@@ -116,7 +129,7 @@ function SmartTable({ smartTable }) {
         size="small"
         aria-label={title}
         role="table"
-        sx={{ tableLayout: 'fixed', borderCollapse: 'separate', mb: 0 }}
+        sx={{ tableLayout: 'fixed', borderCollapse: 'separate' }}
       >
         <colgroup>
           {colgroup
@@ -187,7 +200,7 @@ function SmartTable({ smartTable }) {
         )}
         <TableBody>
           {tbody.map((row) => (
-            <TableRow key={row._key} sx={{ verticalAlign: 'top' }}>
+            <TableRow key={row._key} sx={{ verticalAlign: 'top', ...rowStyle }}>
               {row.cells.map((cell, index) => {
                 let Component = componentMapping[cell._type];
                 const values = propsMapping(cell._type, cell);
@@ -198,7 +211,7 @@ function SmartTable({ smartTable }) {
                   if (fixedFirstColumn) {
                     style = { ...stickyCellStyle, ...rowHeadStyle };
                   } else {
-                    style = colHeadStyle;
+                    style = rowHeadStyle;
                   }
                 } else if (fixedFirstColumn && index === 0) {
                   style = stickyCellStyle;

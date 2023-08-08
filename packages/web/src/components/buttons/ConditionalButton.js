@@ -72,15 +72,6 @@ function ConditionalButton({
                 },
               },
             },
-            contained: {
-              '&:hover': {
-                color: contrastTextColor || theme.palette.primary.contrastText,
-              },
-              '&:focus': {
-                color: contrastTextColor || theme.palette.primary.contrastText,
-                textDecoration: 'none',
-              },
-            },
           },
         },
       },

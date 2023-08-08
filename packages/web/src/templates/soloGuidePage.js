@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 import React, { useState, useEffect, useRef } from 'react';
 import { graphql } from 'gatsby';
 import Box from '@mui/material/Box';
@@ -7,7 +8,7 @@ import Layout from '../containers/layout';
 import LrGuideHero from '../components/sections/LrGuideHero';
 import StackGuideHero from '../components/sections/StackGuideHero';
 import ProgressBar from '../components/ScrollProgressBar';
-import GuideBody from '../components/portableText/serializer/FullIndentSerializer';
+import GuideBody from '../components/portableText/serializer/GuideSerializer';
 import ToC from '../components/TableOfContent';
 import { useUpdateUrl } from '../hooks/useUpdateUrl';
 import { mapGuideHeroToProps } from '../lib/mapToProps';
@@ -108,6 +109,33 @@ function SoloGuidePage({ data, location }) {
   const heroLayout = data?.guide?.hero?.layout;
   const Hero = heroComponentMapping[heroLayout];
 
+  const guideBody = data.guide._rawGuideBody;
+
+  let sectionStarts = [];
+
+  for (let index = 0; index < guideBody.length; index++) {
+    const block = guideBody[index];
+    const id = block?.markDefs?.filter((x) => x._type === 'hashId')[0]?.idTag;
+    if (block.style === 'h2') {
+      sectionStarts.push({
+        position: index,
+        id,
+      });
+    }
+  }
+
+  if (sectionStarts.length < 1) {
+    sectionStarts = [{ position: 0 }];
+  }
+  const sections = [];
+
+  for (let index = 0; index < sectionStarts.length; index++) {
+    const { position: startPosition, id } = sectionStarts[index];
+    const endPosition = sectionStarts[index + 1]?.position || guideBody.length;
+    const section = guideBody.slice(startPosition, endPosition);
+    sections.push({ section, id });
+  }
+
   return (
     <Layout
       location={location}
@@ -129,7 +157,12 @@ function SoloGuidePage({ data, location }) {
                 )}
               </Grid>
               <Grid item md={9} xs={12} component="article" sx={{ order: 1 }}>
-                <GuideBody blocks={data.guide._rawGuideBody} />
+                {sections.map((section, index) => (
+                  // eslint-disable-next-line react/no-array-index-key
+                  <section key={`section-${index}-${section.id}`} id={section.id}>
+                    <GuideBody blocks={section.section} />
+                  </section>
+                ))}
               </Grid>
             </Grid>
           </Container>

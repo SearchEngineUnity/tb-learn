@@ -187,20 +187,24 @@ const serializers = {
   },
   list: {
     bullet: ({ children }) => (
-      <Box
-        component="ul"
-        sx={{ listStyleType: 'disc', ml: '1.4rem', pl: 0, '& > li': { position: 'relative' } }}
-      >
-        {children}
-      </Box>
+      <VerticalSpacingWrapper>
+        <Box
+          component="ul"
+          sx={{ marginBlockStart: 0, marginBlockEnd: 0, paddingInlineStart: '1.5em' }}
+        >
+          {children}
+        </Box>
+      </VerticalSpacingWrapper>
     ),
     number: ({ children }) => (
-      <Box
-        component="ol"
-        sx={{ listStyleType: 'decimal', ml: '1.4rem', pl: 0, '& > li': { position: 'relative' } }}
-      >
-        {children}
-      </Box>
+      <VerticalSpacingWrapper>
+        <Box
+          component="ol"
+          sx={{ marginBlockStart: 0, marginBlockEnd: 0, paddingInlineStart: '1.5em' }}
+        >
+          {children}
+        </Box>
+      </VerticalSpacingWrapper>
     ),
   },
   listItem: ({ children }) => (

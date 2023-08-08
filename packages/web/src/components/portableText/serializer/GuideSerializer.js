@@ -14,7 +14,7 @@ import SmartUnorderedList from '../insertable/SmartUnorderedList';
 import ProductCard from '../insertable/productCard/ProductCard';
 import ClickableImage from '../insertable/ClickableImage';
 import SmartGrid from '../insertable/SmartGrid/SmartGrid';
-import IndentHalfWrapper from '../insertable/IndentHalfWrapper';
+import IndentFullWrapper from '../insertable/IndentFullWrapper';
 import VerticalSpacingWrapper from '../insertable/VerticalSpacingWrapper';
 import PTHeadingTypography from './PTHeadingTypography';
 import { mapMuiBtnToProps, mapVideoToProps } from '../../../lib/mapToProps';
@@ -30,18 +30,7 @@ const serializers = {
         <br />
       );
     },
-    h2: ({ value, children }) => (
-      <PTHeadingTypography
-        variant="h2"
-        id={
-          value.markDefs.length !== 0
-            ? value.markDefs.filter((x) => x._type === 'hashId')[0]?.idTag
-            : undefined
-        }
-      >
-        {children}
-      </PTHeadingTypography>
-    ),
+    h2: ({ value, children }) => <PTHeadingTypography variant="h2">{children}</PTHeadingTypography>,
     h3: ({ value, children }) => (
       <PTHeadingTypography
         variant="h3"
@@ -109,16 +98,16 @@ const serializers = {
   types: {
     illustration: ({ value }) => (
       <VerticalSpacingWrapper>
-        <IndentHalfWrapper>
+        <IndentFullWrapper>
           <Illustration illustration={value} />
-        </IndentHalfWrapper>
+        </IndentFullWrapper>
       </VerticalSpacingWrapper>
     ),
     highlightBox: ({ value }) => (
       <VerticalSpacingWrapper>
-        <IndentHalfWrapper>
+        <IndentFullWrapper>
           <HighlightBox box={value} />
-        </IndentHalfWrapper>
+        </IndentFullWrapper>
       </VerticalSpacingWrapper>
     ),
     smartTable: ({ value }) => (
@@ -128,9 +117,9 @@ const serializers = {
     ),
     video: ({ value }) => (
       <VerticalSpacingWrapper>
-        <IndentHalfWrapper>
+        <IndentFullWrapper>
           <Video {...mapVideoToProps(value)} />
-        </IndentHalfWrapper>
+        </IndentFullWrapper>
       </VerticalSpacingWrapper>
     ),
     btnBlockMui: ({ value }) => (
@@ -138,20 +127,28 @@ const serializers = {
         <ConditionalButton {...mapMuiBtnToProps(value)} />
       </VerticalSpacingWrapper>
     ),
-    smartOrderedList: ({ value }) => <SmartOrderedList {...value} />,
-    smartUnorderedList: ({ value }) => <SmartUnorderedList {...value} />,
+    smartOrderedList: ({ value }) => (
+      <VerticalSpacingWrapper>
+        <SmartOrderedList {...value} />
+      </VerticalSpacingWrapper>
+    ),
+    smartUnorderedList: ({ value }) => (
+      <VerticalSpacingWrapper>
+        <SmartUnorderedList {...value} />
+      </VerticalSpacingWrapper>
+    ),
     productCard: ({ value }) => (
       <VerticalSpacingWrapper>
-        <IndentHalfWrapper>
+        <IndentFullWrapper>
           <ProductCard {...value} />
-        </IndentHalfWrapper>
+        </IndentFullWrapper>
       </VerticalSpacingWrapper>
     ),
     clickableImage: ({ value }) => (
       <VerticalSpacingWrapper>
-        <IndentHalfWrapper>
+        <IndentFullWrapper>
           <ClickableImage {...value} />
-        </IndentHalfWrapper>
+        </IndentFullWrapper>
       </VerticalSpacingWrapper>
     ),
     smartGrid: ({ value }) => (
@@ -201,20 +198,14 @@ const serializers = {
   list: {
     bullet: ({ children }) => (
       <VerticalSpacingWrapper>
-        <Box
-          component="ul"
-          sx={{ marginBlockStart: 0, marginBlockEnd: 0, paddingInlineStart: '1.5em' }}
-        >
+        <Box component="ul" sx={{ marginBlockStart: 0, marginBlockEnd: 0 }}>
           {children}
         </Box>
       </VerticalSpacingWrapper>
     ),
     number: ({ children }) => (
       <VerticalSpacingWrapper>
-        <Box
-          component="ol"
-          sx={{ marginBlockStart: 0, marginBlockEnd: 0, paddingInlineStart: '1.5em' }}
-        >
+        <Box component="ol" sx={{ marginBlockStart: 0, marginBlockEnd: 0 }}>
           {children}
         </Box>
       </VerticalSpacingWrapper>
