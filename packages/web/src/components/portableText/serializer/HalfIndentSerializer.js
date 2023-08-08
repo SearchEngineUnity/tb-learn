@@ -1,6 +1,7 @@
 /* eslint-disable import/no-cycle */
 import { PortableText } from '@portabletext/react';
 import React from 'react';
+import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Video from '../insertable/Video';
 import Illustration from '../insertable/Illustration';
@@ -196,6 +197,28 @@ const serializers = {
         </ConditionalLink>
       );
     },
+  },
+  list: {
+    bullet: ({ children }) => (
+      <VerticalSpacingWrapper>
+        <Box
+          component="ul"
+          sx={{ marginBlockStart: 0, marginBlockEnd: 0, paddingInlineStart: '1.5em' }}
+        >
+          {children}
+        </Box>
+      </VerticalSpacingWrapper>
+    ),
+    number: ({ children }) => (
+      <VerticalSpacingWrapper>
+        <Box
+          component="ol"
+          sx={{ marginBlockStart: 0, marginBlockEnd: 0, paddingInlineStart: '1.5em' }}
+        >
+          {children}
+        </Box>
+      </VerticalSpacingWrapper>
+    ),
   },
   listItem: ({ children }) => (
     <Typography variant="body1" component="li">
