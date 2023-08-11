@@ -9,7 +9,11 @@ export function useSectionsObserver() {
   useEffect(() => {
     const handleObserver = (entries) => {
       entries.forEach((entry) => {
-        if (entry?.isIntersecting) {
+        if (
+          entry?.isIntersecting &&
+          ((entry.target.nodeName === 'SECTION' && entry.target.id) ||
+            entry.target.nodeName === 'H1')
+        ) {
           setActiveId(entry.target.id);
         }
       });
