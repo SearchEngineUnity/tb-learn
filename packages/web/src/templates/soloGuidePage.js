@@ -111,11 +111,16 @@ function SoloGuidePage({ data, location }) {
 
   const guideBody = data.guide._rawGuideBody;
 
-  let sectionStarts = [];
+  const sectionStarts = [];
 
   for (let index = 0; index < guideBody.length; index++) {
     const block = guideBody[index];
     const id = block?.markDefs?.filter((x) => x._type === 'hashId')[0]?.idTag;
+    if (index === 0 && block.style !== 'h2') {
+      sectionStarts.push({
+        position: index,
+      });
+    }
     if (block.style === 'h2') {
       sectionStarts.push({
         position: index,
@@ -124,9 +129,6 @@ function SoloGuidePage({ data, location }) {
     }
   }
 
-  if (sectionStarts.length < 1) {
-    sectionStarts = [{ position: 0 }];
-  }
   const sections = [];
 
   for (let index = 0; index < sectionStarts.length; index++) {
