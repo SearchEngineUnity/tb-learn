@@ -22,6 +22,7 @@ function ProductGrid({ id, pageJumpText, tiles, design }) {
       justifyContent="center"
       alignItems="stretch"
       component="section"
+      className="product-grid"
     >
       {tiles &&
         tiles.map((tile) => {

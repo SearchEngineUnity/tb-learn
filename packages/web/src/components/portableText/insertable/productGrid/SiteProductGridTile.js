@@ -86,7 +86,10 @@ export default function SiteProductGridTile({ pageJumpText, tile }) {
             {name}
           </Typography>
         )}
-        <Box sx={{ padding: { xs: '0px 16px 16px', sm: '16px', lg: '0px 16px 16px' } }}>
+        <Box
+          sx={{ padding: { xs: '0px 16px 16px', sm: '16px', lg: '0px 16px 16px' } }}
+          className="product-grid-tile__content"
+        >
           <Content blocks={content} />
         </Box>
       </Box>
@@ -105,6 +108,7 @@ export default function SiteProductGridTile({ pageJumpText, tile }) {
           text={btnText}
           disableElevation
           borderRadius="0px"
+          className="product-grid-tile__btn"
         />
         {pageJumpText && hashId && (
           <Box

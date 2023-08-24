@@ -130,6 +130,7 @@ function SmartTable({ smartTable }) {
         aria-label={title}
         role="table"
         sx={{ tableLayout: 'fixed', borderCollapse: 'separate' }}
+        className="table"
       >
         <colgroup>
           {colgroup
@@ -190,6 +191,7 @@ function SmartTable({ smartTable }) {
                     sx={style}
                     scope="col"
                     role={cell._type === 'emptyCell' ? 'cell' : 'columnheader'}
+                    className="table__cell"
                   >
                     {Component ? <Component {...values} /> : errorMessage}
                   </TableCell>
@@ -236,6 +238,7 @@ function SmartTable({ smartTable }) {
                     component={rowHeading && index === 0 ? 'th' : 'td'}
                     scope={rowHeading && index === 0 && 'row'}
                     role={rowHeading && index === 0 ? 'rowheader' : 'cell'}
+                    className="table__cell"
                   >
                     {Component ? <Component {...values} /> : errorMessage}
                   </TableCell>

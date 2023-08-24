@@ -44,6 +44,7 @@ function HighlightBox({ box: { _key: id, type, text } }) {
           textDecorationColor: 'currentcolor',
         },
       }}
+      className="hlb"
     >
       <Box sx={{ display: 'inline-flex', mb: '0.8125em' }}>
         <Icon sx={{ alignSelf: 'center', color: `hlBox.${type}.iconColor` }} />
