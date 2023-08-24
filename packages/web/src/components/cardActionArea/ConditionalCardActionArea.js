@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardActionArea } from 'gatsby-theme-material-ui';
 
-function ConditionalCardActionArea({ link, children }) {
+function ConditionalCardActionArea({ link, children, className }) {
   let linkType = link?._type;
 
   let { href = undefined } = link;
@@ -27,6 +27,7 @@ function ConditionalCardActionArea({ link, children }) {
       rel={rel || undefined}
       to={linkType && linkType === 'internalLocal' ? href : undefined}
       href={linkType && linkType !== 'internalLocal' ? href : undefined}
+      className={className}
     >
       {children}
     </CardActionArea>

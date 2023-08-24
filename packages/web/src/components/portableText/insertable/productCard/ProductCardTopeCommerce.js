@@ -181,9 +181,12 @@ function ProductCardTopeCommerce(props) {
               }}
             >
               {btnSet &&
-                btnSet.map((btn) => (
+                btnSet.map((btn, index) => (
                   <Box sx={{ mr: 3 }} key={btn._key}>
-                    <ConditionalButton {...mapMuiBtnToProps(btn)} />
+                    <ConditionalButton
+                      {...mapMuiBtnToProps(btn)}
+                      className={`product-card__top-btn btn_position_${index}`}
+                    />
                   </Box>
                 ))}
             </Box>
@@ -199,9 +202,12 @@ function ProductCardTopeCommerce(props) {
               }}
             >
               {btnSet &&
-                btnSet.map((btn) => (
+                btnSet.map((btn, index) => (
                   <Box sx={{ display: 'flex', mt: 3, justifyContent: 'center' }} key={btn._key}>
-                    <ConditionalButton {...mapMuiBtnToProps(btn)} />
+                    <ConditionalButton
+                      {...mapMuiBtnToProps(btn)}
+                      className={`product-card__top-btn btn_position_${index}`}
+                    />
                   </Box>
                 ))}
             </Box>

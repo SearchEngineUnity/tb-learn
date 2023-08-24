@@ -82,7 +82,7 @@ function ProductCardTopApp({ rating, image, infoList, iosLink, googlePlayLink })
                 width: '160px',
               }}
             >
-              <CardActionArea href={iosLink} rel="nofollow">
+              <CardActionArea href={iosLink} rel="nofollow" className="product-card__app-store-btn">
                 <img src={appStore} alt="App Store" loading="eager" width="100%" />
               </CardActionArea>
             </Card>
@@ -97,7 +97,11 @@ function ProductCardTopApp({ rating, image, infoList, iosLink, googlePlayLink })
                 width: '160px',
               }}
             >
-              <CardActionArea href={iosLink} rel="nofollow">
+              <CardActionArea
+                href={iosLink}
+                rel="nofollow"
+                className="product-card__google-play-btn"
+              >
                 <img src={googlePlay} alt="Google Play Store" loading="eager" width="100%" />
               </CardActionArea>
             </Card>
@@ -128,7 +132,7 @@ function ProductCardTopApp({ rating, image, infoList, iosLink, googlePlayLink })
               width: '160px',
             }}
           >
-            <CardActionArea href={iosLink} rel="nofollow">
+            <CardActionArea href={iosLink} rel="nofollow" className="product-card__app-store-btn">
               <img src={appStore} alt="App Store" loading="eager" width="100%" />
             </CardActionArea>
           </Card>
@@ -142,7 +146,7 @@ function ProductCardTopApp({ rating, image, infoList, iosLink, googlePlayLink })
               width: '160px',
             }}
           >
-            <CardActionArea href={iosLink} rel="nofollow">
+            <CardActionArea href={iosLink} rel="nofollow" className="product-card__google-play-btn">
               <img src={googlePlay} alt="Google Play Store" loading="eager" width="100%" />
             </CardActionArea>
           </Card>

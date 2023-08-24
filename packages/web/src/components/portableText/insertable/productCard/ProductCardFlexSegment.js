@@ -16,7 +16,7 @@ function ProductCardFlexSegment({ title, headingLevel, content, hide }) {
   };
 
   return (
-    <Box sx={{ m: 3, display }}>
+    <Box sx={{ m: 3, display }} className="product-card-segment">
       <Divider sx={{ my: 3 }} />
       {title && (
         <Typography component={headingLevel || 'p'} variant="h5" gutterBottom>

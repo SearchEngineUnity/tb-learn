@@ -20,6 +20,7 @@ function ConditionalButton({
   alignment,
   typography,
   bgImage,
+  className,
 }) {
   const { main, dark, contrastText } = colors || {};
   const mainColor = determineColor(main?.color);
@@ -94,6 +95,8 @@ function ConditionalButton({
   if (linkType === 'internalLocal' && newTab) {
     linkType = 'internalGlobal';
   }
+
+  const btnClassName = `btn ${className}`.trim();
   return (
     <ThemeProvider theme={(theme) => btnTheme(theme)}>
       <Box sx={{ display: 'flex', justifyContent: alignment }}>
@@ -113,6 +116,7 @@ function ConditionalButton({
             padding,
             textAlign: 'center',
           }}
+          className={btnClassName}
         >
           {text}
         </Button>

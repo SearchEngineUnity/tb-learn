@@ -132,9 +132,12 @@ function ProductCardTopOriginal({ name, headingLevel, rating, image, infoList, b
             }}
           >
             {btnSet &&
-              btnSet.map((btn) => (
+              btnSet.map((btn, index) => (
                 <Box sx={{ mt: 3, display: 'flex', justifyContent: 'center' }} key={btn._key}>
-                  <ConditionalButton {...mapMuiBtnToProps(btn)} />
+                  <ConditionalButton
+                    {...mapMuiBtnToProps(btn)}
+                    className={`product-card__top-btn btn_position_${index}`}
+                  />
                 </Box>
               ))}
           </Box>

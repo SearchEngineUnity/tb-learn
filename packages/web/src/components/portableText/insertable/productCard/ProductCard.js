@@ -37,7 +37,7 @@ function ProductCard({
   const ProductCardTop = topSelector[design] || Error;
 
   return (
-    <>
+    <div className="product-card">
       {tagText && <br />}
       <Box sx={{ position: 'relative' }}>
         <Card>
@@ -98,7 +98,7 @@ function ProductCard({
             })}
         </Card>
       </Box>
-    </>
+    </div>
   );
 }
 

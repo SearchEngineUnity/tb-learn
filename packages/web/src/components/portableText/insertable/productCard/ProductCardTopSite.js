@@ -74,7 +74,7 @@ function ProductCardTopSite({ rating, image, infoList, btnSet }) {
           {btnSet &&
             btnSet.map((btn) => (
               <Box key={btn._key}>
-                <ConditionalButton {...mapMuiBtnToProps(btn)} />
+                <ConditionalButton {...mapMuiBtnToProps(btn)} className="product-card__top-btn" />
               </Box>
             ))}
         </Grid>
@@ -97,7 +97,7 @@ function ProductCardTopSite({ rating, image, infoList, btnSet }) {
         {btnSet &&
           btnSet.map((btn) => (
             <Box sx={{ display: 'flex', mt: 1, justifyContent: 'center' }} key={btn._key}>
-              <ConditionalButton {...mapMuiBtnToProps(btn)} />
+              <ConditionalButton {...mapMuiBtnToProps(btn)} className="product-card__top-btn" />
             </Box>
           ))}
       </Box>
