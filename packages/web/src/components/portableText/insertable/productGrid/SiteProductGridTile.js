@@ -8,7 +8,7 @@ import Illustration from '../Illustration';
 import Content from '../../serializer/NoIndentSerializer';
 import ConditionalButton from '../../../buttons/ConditionalButton';
 
-export default function SiteProductGridTile({ pageJumpText, tile, position }) {
+export default function SiteProductGridTile({ pageJumpText, tile, tilePosition }) {
   const {
     specialTagText,
     tileImage,
@@ -108,7 +108,7 @@ export default function SiteProductGridTile({ pageJumpText, tile, position }) {
           text={btnText}
           disableElevation
           borderRadius="0px"
-          className={`product-grid-tile__btn btn_position-${position}`}
+          className={`product-grid-tile__btn tile_position-${tilePosition}`}
         />
         {pageJumpText && hashId && (
           <Box

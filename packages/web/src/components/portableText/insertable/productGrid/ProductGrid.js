@@ -29,7 +29,7 @@ function ProductGrid({ id, pageJumpText, tiles, design }) {
           const { _key } = tile;
           return (
             <Grid key={_key} xs={12} lg={3}>
-              <Tile key={_key} pageJumpText={pageJumpText} tile={tile} position={index} />
+              <Tile key={_key} pageJumpText={pageJumpText} tile={tile} tilePosition={index} />
             </Grid>
           );
         })}
