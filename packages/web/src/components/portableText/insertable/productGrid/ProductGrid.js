@@ -25,11 +25,11 @@ function ProductGrid({ id, pageJumpText, tiles, design }) {
       className="product-grid"
     >
       {tiles &&
-        tiles.map((tile) => {
+        tiles.map((tile, index) => {
           const { _key } = tile;
           return (
             <Grid key={_key} xs={12} lg={3}>
-              <Tile key={_key} pageJumpText={pageJumpText} tile={tile} />
+              <Tile key={_key} pageJumpText={pageJumpText} tile={tile} position={index} />
             </Grid>
           );
         })}
