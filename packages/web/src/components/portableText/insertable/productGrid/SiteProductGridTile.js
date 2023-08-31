@@ -125,6 +125,7 @@ export default function SiteProductGridTile({ pageJumpText, tile, tilePosition }
                 textAlign: 'center',
                 display: 'block',
               }}
+              className="product-grid__jump-link"
             >
               {pageJumpText}
             </Link>
