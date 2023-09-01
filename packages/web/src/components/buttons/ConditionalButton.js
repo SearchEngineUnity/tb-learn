@@ -97,6 +97,7 @@ function ConditionalButton({
   }
 
   const btnClassName = className ? `btn ${className}`.trim() : 'btn';
+
   return (
     <ThemeProvider theme={(theme) => btnTheme(theme)}>
       <Box sx={{ display: 'flex', justifyContent: alignment }}>
