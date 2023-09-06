@@ -213,7 +213,7 @@ function ProductCardTopeCommerce(props) {
             </Box>
           </Grid>
         </Grid>
-        <Box sx={{ mt: 3 }}>
+        <Box sx={{ mt: { xs: 6, md: 3, lg: 3, xl: 3 } }}>
           <ProductInfoList infoList={infoList} />
         </Box>
       </Box>

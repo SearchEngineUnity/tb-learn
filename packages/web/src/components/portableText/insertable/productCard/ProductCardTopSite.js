@@ -101,7 +101,7 @@ function ProductCardTopSite({ rating, image, infoList, btnSet }) {
             </Box>
           ))}
       </Box>
-      <Box sx={{ mt: 2 }}>
+      <Box sx={{ mt: { xs: 6, md: 2, lg: 2, xl: 2 } }}>
         <ProductInfoList infoList={infoList} />
       </Box>
     </Box>
