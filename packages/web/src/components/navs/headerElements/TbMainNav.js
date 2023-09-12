@@ -723,87 +723,92 @@ export default function MyMainNav() {
                       <div className="column medium-8 large-9">
                         <h3>Featured and Trending &quot;Shopping Online&quot; Articles</h3>
                         <div className="row">
-                          <div className="column medium-6 large-4 xlarge-3 show-for-xlarge">
+                          <div className="column medium-6 large-4 xlarge-3">
                             <a
-                              href="https://techboomers.com/best-concert-ticket-sites"
+                              href="https://techboomers.com/ticket-resale-sites-lowest-fees"
                               className="card-link"
                             >
                               <div className="card card-tall">
                                 <img
                                   width="240"
                                   height="150"
-                                  src="https://techboomers.com/wp-content/uploads/2023/08/concert-venue-1-240x150.jpg"
-                                  className="category-blue wp-post-image"
-                                  alt="Outdoor concert venue"
-                                  decoding="async"
-                                  loading="lazy"
-                                />
-                                <div className="card-section">
-                                  <h5>10 Best Concert Ticket Sites for Buyers Ranked in 2023</h5>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className="column medium-6 large-4 xlarge-3">
-                            <a
-                              href="https://techboomers.com/best-ticket-resale-sites-for-sellers"
-                              className="card-link"
-                            >
-                              <div className="card card-tall">
-                                <img
-                                  width={240}
-                                  height={150}
-                                  src="https://techboomers.com/wp-content/uploads/2023/07/concert-audience-1-240x150.jpg"
+                                  src="https://techboomers.com/wp-content/uploads/2023/09/live-event-audience-240x150.jpg"
                                   className="category-blue wp-post-image"
                                   alt=""
                                   decoding="async"
                                   loading="lazy"
                                 />
                                 <div className="card-section">
-                                  <h5>10 Best Ticket Resale Sites Ranked for Sellers in 2023</h5>
+                                  <h5>
+                                    Top 5 Ticket Resale Sites with the Lowest Fees to Buy & Sell
+                                  </h5>
                                 </div>
                               </div>
                             </a>
                           </div>
                           <div className="column medium-6 large-4 xlarge-3">
                             <a
-                              href="https://techboomers.com/ticketmaster-vs-stubhub"
+                              href="https://techboomers.com/best-sites-to-sell-concert-tickets"
                               className="card-link"
                             >
                               <div className="card card-tall">
                                 <img
                                   width={240}
                                   height={150}
-                                  src="https://techboomers.com/wp-content/uploads/2023/01/live-concert-240x150.jpg"
+                                  src="https://techboomers.com/wp-content/uploads/2023/09/sell-concert-tickets-1-240x150.jpg"
                                   className="category-blue wp-post-image"
-                                  alt="A musician standing on stage in front of a large crowd"
+                                  alt=""
                                   decoding="async"
                                   loading="lazy"
                                 />
                                 <div className="card-section">
-                                  <h5>Ticketmaster vs StubHub in 2023: Fees, Refunds & More</h5>
+                                  <h5>10 Best Sites to Sell Concert Tickets Ranked in 2023</h5>
                                 </div>
                               </div>
                             </a>
                           </div>
                           <div className="column medium-6 large-4 xlarge-3 show-for-large">
                             <a
-                              href="https://techboomers.com/learn/selling-on-ticketmaster-vs-stubhub"
+                              href="https://techboomers.com/ticketmaster-alternatives"
                               className="card-link"
                             >
                               <div className="card card-tall">
                                 <img
                                   width={240}
                                   height={150}
-                                  src="https://techboomers.com/wp-content/uploads/2023/01/concert-audience-240x150.jpg"
+                                  src="https://techboomers.com/wp-content/uploads/2023/09/concert-stadium-2-240x150.jpg"
                                   className="category-blue wp-post-image"
-                                  alt="Hands raised in the audience of a live event"
+                                  alt=""
                                   decoding="async"
                                   loading="lazy"
                                 />
                                 <div className="card-section">
                                   <h5>
-                                    Ticketmaster vs StubHub for Sellers: Fees, Policies, & More
+                                    7 Best Ticketmaster Competitors for Ticket Resales Ranked in
+                                    2023
+                                  </h5>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div className="column medium-6 large-4 xlarge-3 show-for-xlarge">
+                            <a
+                              href="https://techboomers.com/stubhub-alternatives"
+                              className="card-link"
+                            >
+                              <div className="card card-tall">
+                                <img
+                                  width={240}
+                                  height={150}
+                                  src="https://techboomers.com/wp-content/uploads/2023/09/concert-stadium-1-240x150.jpg"
+                                  className="category-blue wp-post-image"
+                                  alt=""
+                                  decoding="async"
+                                  loading="lazy"
+                                />
+                                <div className="card-section">
+                                  <h5>
+                                    7 Best StubHub Alternatives for Ticket Resales Ranked in 2023
                                   </h5>
                                 </div>
                               </div>
@@ -813,20 +818,20 @@ export default function MyMainNav() {
                         <div className="row">
                           <div className="column medium-12 large-8 xlarge-6">
                             <a
-                              href="https://techboomers.com/amazon-alternative-belgium"
+                              href="https://techboomers.com/vivid-seats-vs-ticketmaster"
                               className="card-link"
                             >
                               <div className="row card horizontal collapse card-medium">
                                 <div className="column medium-4 hide-for-small-only">
                                   <img
-                                    width={200}
-                                    height={150}
-                                    src="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-belgium-240x150.png"
+                                    width="200"
+                                    height="150"
+                                    src="https://techboomers.com/wp-content/uploads/2023/09/live-event-audience-200x150.jpg"
                                     className="attachment-best-card size-best-card wp-post-image"
-                                    alt="Amazon alternatives in Belgium"
+                                    alt=""
                                     decoding="async"
                                     loading="lazy"
-                                    srcSet="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-belgium-200x150.png 200w, https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-belgium-420x315.png 420w"
+                                    srcSet="https://techboomers.com/wp-content/uploads/2023/09/live-event-audience-200x150.jpg 200w, https://techboomers.com/wp-content/uploads/2023/09/live-event-audience-420x315.jpg 420w"
                                     sizes="(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 200px"
                                   />
                                 </div>
@@ -834,7 +839,7 @@ export default function MyMainNav() {
                                   <div className="card-divider category-blue" />
                                   <div className="card-section">
                                     <h5>
-                                      13 Amazon Alternatives in Belgium for Finding Quality Products
+                                      Vivid Seats vs Ticketmaster in 2023: Fees, Refunds, & More
                                     </h5>
                                   </div>
                                 </div>
@@ -843,29 +848,27 @@ export default function MyMainNav() {
                           </div>
                           <div className="column medium-12 large-8 xlarge-6 show-for-xlarge">
                             <a
-                              href="https://techboomers.com/netherlands-amazon-alternative"
+                              href="https://techboomers.com/best-concert-ticket-sites"
                               className="card-link"
                             >
                               <div className="row card horizontal collapse card-medium">
                                 <div className="column medium-4 hide-for-small-only">
                                   <img
-                                    width={200}
-                                    height={150}
-                                    src="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-netherlands-240x150.png"
+                                    width="200"
+                                    height="150"
+                                    src="https://techboomers.com/wp-content/uploads/2023/08/concert-venue-1-200x150.jpg"
                                     className="attachment-best-card size-best-card wp-post-image"
-                                    alt="Amazon alternatives in Netherlands"
+                                    alt="Outdoor concert venue"
                                     decoding="async"
                                     loading="lazy"
-                                    srcSet="https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-netherlands-200x150.png 200w, https://techboomers.com/wp-content/uploads/2022/06/amazon-alternatives-netherlands-420x315.png 420w"
+                                    srcSet="https://techboomers.com/wp-content/uploads/2023/08/concert-venue-1-200x150.jpg 200w, https://techboomers.com/wp-content/uploads/2023/08/concert-venue-1-420x315.jpg 420w"
                                     sizes="(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 200px"
                                   />
                                 </div>
                                 <div className="column small-12 medium-8">
                                   <div className="card-divider category-blue" />
                                   <div className="card-section">
-                                    <h5>
-                                      14 Amazon Alternatives in the Netherlands for Online Shopping
-                                    </h5>
+                                    <h5>10 Best Concert Ticket Sites for Buyers Ranked in 2023</h5>
                                   </div>
                                 </div>
                               </div>
