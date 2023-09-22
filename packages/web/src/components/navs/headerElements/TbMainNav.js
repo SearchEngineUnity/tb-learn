@@ -725,13 +725,38 @@ export default function MyMainNav() {
                         <div className="row">
                           <div className="column medium-6 large-4 xlarge-3">
                             <a
-                              href="https://techboomers.com/ticket-resale-sites-lowest-fees"
+                              href="https://techboomers.com/trustworthy-reliable-ticket-sites"
                               className="card-link"
                             >
                               <div className="card card-tall">
                                 <img
                                   width="240"
                                   height="150"
+                                  src="https://techboomers.com/wp-content/uploads/2023/09/people-exchanging-tickets-1-240x150.jpg"
+                                  className="category-blue wp-post-image"
+                                  alt=""
+                                  decoding="async"
+                                  loading="lazy"
+                                  srcSet="https://techboomers.com/wp-content/uploads/2023/09/people-exchanging-tickets-1-240x150.jpg 240w, https://techboomers.com/wp-content/uploads/2023/09/people-exchanging-tickets-1-300x188.jpg 300w, https://techboomers.com/wp-content/uploads/2023/09/people-exchanging-tickets-1-150x94.jpg 150w, https://techboomers.com/wp-content/uploads/2023/09/people-exchanging-tickets-1-768x480.jpg 768w, https://techboomers.com/wp-content/uploads/2023/09/people-exchanging-tickets-1-640x400.jpg 640w, https://techboomers.com/wp-content/uploads/2023/09/people-exchanging-tickets-1.jpg 800w"
+                                  sizes="(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 240px"
+                                />
+                                <div className="card-section">
+                                  <h5>
+                                    Top 6 Trusted & Reliable Resale Ticket Sites to Buy & Sell
+                                  </h5>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div className="column medium-6 large-4 xlarge-3">
+                            <a
+                              href="https://techboomers.com/ticket-resale-sites-lowest-fees"
+                              className="card-link"
+                            >
+                              <div className="card card-tall">
+                                <img
+                                  width={240}
+                                  height={150}
                                   src="https://techboomers.com/wp-content/uploads/2023/09/live-event-audience-240x150.jpg"
                                   className="category-blue wp-post-image"
                                   alt=""
@@ -746,7 +771,7 @@ export default function MyMainNav() {
                               </div>
                             </a>
                           </div>
-                          <div className="column medium-6 large-4 xlarge-3">
+                          <div className="column medium-6 large-4 xlarge-3 show-for-large">
                             <a
                               href="https://techboomers.com/best-sites-to-sell-concert-tickets"
                               className="card-link"
@@ -767,7 +792,7 @@ export default function MyMainNav() {
                               </div>
                             </a>
                           </div>
-                          <div className="column medium-6 large-4 xlarge-3 show-for-large">
+                          <div className="column medium-6 large-4 xlarge-3 show-for-xlarge">
                             <a
                               href="https://techboomers.com/ticketmaster-alternatives"
                               className="card-link"
@@ -791,32 +816,39 @@ export default function MyMainNav() {
                               </div>
                             </a>
                           </div>
-                          <div className="column medium-6 large-4 xlarge-3 show-for-xlarge">
+                        </div>
+                        <div className="row">
+                          <div className="column medium-12 large-8 xlarge-6">
                             <a
                               href="https://techboomers.com/stubhub-alternatives"
                               className="card-link"
                             >
-                              <div className="card card-tall">
-                                <img
-                                  width={240}
-                                  height={150}
-                                  src="https://techboomers.com/wp-content/uploads/2023/09/concert-stadium-1-240x150.jpg"
-                                  className="category-blue wp-post-image"
-                                  alt=""
-                                  decoding="async"
-                                  loading="lazy"
-                                />
-                                <div className="card-section">
-                                  <h5>
-                                    7 Best StubHub Alternatives for Ticket Resales Ranked in 2023
-                                  </h5>
+                              <div className="row card horizontal collapse card-medium">
+                                <div className="column medium-4 hide-for-small-only">
+                                  <img
+                                    width="200"
+                                    height="150"
+                                    src="https://techboomers.com/wp-content/uploads/2023/09/concert-stadium-1-200x150.jpg"
+                                    className="attachment-best-card size-best-card wp-post-image"
+                                    alt=""
+                                    decoding="async"
+                                    loading="lazy"
+                                    srcSet="https://techboomers.com/wp-content/uploads/2023/09/concert-stadium-1-200x150.jpg 200w, https://techboomers.com/wp-content/uploads/2023/09/concert-stadium-1-420x315.jpg 420w"
+                                    sizes="(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 200px"
+                                  />
+                                </div>
+                                <div className="column small-12 medium-8">
+                                  <div className="card-divider category-blue" />
+                                  <div className="card-section">
+                                    <h5>
+                                      7 Best StubHub Alternatives for Ticket Resales Ranked in 2023
+                                    </h5>
+                                  </div>
                                 </div>
                               </div>
                             </a>
                           </div>
-                        </div>
-                        <div className="row">
-                          <div className="column medium-12 large-8 xlarge-6">
+                          <div className="column medium-12 large-8 xlarge-6 show-for-xlarge">
                             <a
                               href="https://techboomers.com/vivid-seats-vs-ticketmaster"
                               className="card-link"
@@ -841,34 +873,6 @@ export default function MyMainNav() {
                                     <h5>
                                       Vivid Seats vs Ticketmaster in 2023: Fees, Refunds, & More
                                     </h5>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className="column medium-12 large-8 xlarge-6 show-for-xlarge">
-                            <a
-                              href="https://techboomers.com/best-concert-ticket-sites"
-                              className="card-link"
-                            >
-                              <div className="row card horizontal collapse card-medium">
-                                <div className="column medium-4 hide-for-small-only">
-                                  <img
-                                    width="200"
-                                    height="150"
-                                    src="https://techboomers.com/wp-content/uploads/2023/08/concert-venue-1-200x150.jpg"
-                                    className="attachment-best-card size-best-card wp-post-image"
-                                    alt="Outdoor concert venue"
-                                    decoding="async"
-                                    loading="lazy"
-                                    srcSet="https://techboomers.com/wp-content/uploads/2023/08/concert-venue-1-200x150.jpg 200w, https://techboomers.com/wp-content/uploads/2023/08/concert-venue-1-420x315.jpg 420w"
-                                    sizes="(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 200px"
-                                  />
-                                </div>
-                                <div className="column small-12 medium-8">
-                                  <div className="card-divider category-blue" />
-                                  <div className="card-section">
-                                    <h5>10 Best Concert Ticket Sites for Buyers Ranked in 2023</h5>
                                   </div>
                                 </div>
                               </div>
