@@ -7,6 +7,10 @@
   "keywords": [
     "gatsby"
   ],
+  "engines": {
+    "node": "18.13.0",
+    "npm": "~8.19.3"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby clean && gatsby develop -H 0.0.0.0",
@@ -14,7 +18,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "build:app": "npm run clean && gatsby build --prefix-paths && npm run move",
-    "build:do": "npm install --legacy-peer-deps && gatsby clean && gatsby build",
+    "build:digitalocean": "npm install --production=false --legacy-peer-deps && npm run clean && npm run build && npm ci",
     "move": "cd public && mkdir learn | mv * learn"
   },
   "dependencies": {
