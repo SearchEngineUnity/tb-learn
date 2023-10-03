@@ -14,6 +14,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "build:app": "npm run clean && gatsby build --prefix-paths && npm run move",
+    "build:do": "npm install --legacy-peer-deps && gatsby clean && gatsby build",
     "move": "cd public && mkdir learn | mv * learn"
   },
   "dependencies": {
