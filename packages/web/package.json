@@ -18,7 +18,6 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "build:app": "npm run clean && gatsby build --prefix-paths && npm run move",
-    "build:digitalocean": "npm install --production=false --legacy-peer-deps && npm run clean && npm run build && npm ci",
     "move": "cd public && mkdir learn | mv * learn"
   },
   "dependencies": {
