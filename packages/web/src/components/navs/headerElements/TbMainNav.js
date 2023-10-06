@@ -725,6 +725,48 @@ export default function MyMainNav() {
                         <div className="row">
                           <div className="column medium-6 large-4 xlarge-3">
                             <a
+                              href="https://techboomers.com/safest-concert-ticket-sites"
+                              className="card-link"
+                            >
+                              <div className="card card-tall">
+                                <img
+                                  width="240"
+                                  height="150"
+                                  src="https://techboomers.com/wp-content/uploads/2023/09/hand-raised-at-concert-1-240x150.jpg"
+                                  className="category-blue wp-post-image"
+                                  alt=""
+                                  decoding="async"
+                                  loading="lazy"
+                                />
+                                <div className="card-section">
+                                  <h5>The 6 Most Reliable Concert Ticket Sites to Buy & Sell On</h5>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div className="column medium-6 large-4 xlarge-3">
+                            <a
+                              href="https://techboomers.com/cheapest-concert-ticket-sites"
+                              className="card-link"
+                            >
+                              <div className="card card-tall">
+                                <img
+                                  width={240}
+                                  height={150}
+                                  src="https://techboomers.com/wp-content/uploads/2023/09/outdoor-concert-venue-1-240x150.jpg"
+                                  className="category-blue wp-post-image"
+                                  alt=""
+                                  decoding="async"
+                                  loading="lazy"
+                                />
+                                <div className="card-section">
+                                  <h5>Top 6 Cheapest Concert Ticket Sites for Buyers & Sellers</h5>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div className="column medium-6 large-4 xlarge-3 show-for-large">
+                            <a
                               href="https://techboomers.com/trustworthy-reliable-ticket-sites"
                               className="card-link"
                             >
@@ -748,7 +790,7 @@ export default function MyMainNav() {
                               </div>
                             </a>
                           </div>
-                          <div className="column medium-6 large-4 xlarge-3">
+                          <div className="column medium-6 large-4 xlarge-3 show-for-xlarge">
                             <a
                               href="https://techboomers.com/ticket-resale-sites-lowest-fees"
                               className="card-link"
@@ -771,56 +813,11 @@ export default function MyMainNav() {
                               </div>
                             </a>
                           </div>
-                          <div className="column medium-6 large-4 xlarge-3 show-for-large">
-                            <a
-                              href="https://techboomers.com/best-sites-to-sell-concert-tickets"
-                              className="card-link"
-                            >
-                              <div className="card card-tall">
-                                <img
-                                  width={240}
-                                  height={150}
-                                  src="https://techboomers.com/wp-content/uploads/2023/09/sell-concert-tickets-1-240x150.jpg"
-                                  className="category-blue wp-post-image"
-                                  alt=""
-                                  decoding="async"
-                                  loading="lazy"
-                                />
-                                <div className="card-section">
-                                  <h5>10 Best Sites to Sell Concert Tickets Ranked in 2023</h5>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className="column medium-6 large-4 xlarge-3 show-for-xlarge">
-                            <a
-                              href="https://techboomers.com/ticketmaster-alternatives"
-                              className="card-link"
-                            >
-                              <div className="card card-tall">
-                                <img
-                                  width={240}
-                                  height={150}
-                                  src="https://techboomers.com/wp-content/uploads/2023/09/concert-stadium-2-240x150.jpg"
-                                  className="category-blue wp-post-image"
-                                  alt=""
-                                  decoding="async"
-                                  loading="lazy"
-                                />
-                                <div className="card-section">
-                                  <h5>
-                                    7 Best Ticketmaster Competitors for Ticket Resales Ranked in
-                                    2023
-                                  </h5>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
                         </div>
                         <div className="row">
                           <div className="column medium-12 large-8 xlarge-6">
                             <a
-                              href="https://techboomers.com/stubhub-alternatives"
+                              href="https://techboomers.com/best-sites-to-sell-concert-tickets"
                               className="card-link"
                             >
                               <div className="row card horizontal collapse card-medium">
@@ -828,21 +825,19 @@ export default function MyMainNav() {
                                   <img
                                     width="200"
                                     height="150"
-                                    src="https://techboomers.com/wp-content/uploads/2023/09/concert-stadium-1-200x150.jpg"
+                                    src="https://techboomers.com/wp-content/uploads/2023/09/sell-concert-tickets-1-200x150.jpg"
                                     className="attachment-best-card size-best-card wp-post-image"
                                     alt=""
                                     decoding="async"
                                     loading="lazy"
-                                    srcSet="https://techboomers.com/wp-content/uploads/2023/09/concert-stadium-1-200x150.jpg 200w, https://techboomers.com/wp-content/uploads/2023/09/concert-stadium-1-420x315.jpg 420w"
+                                    srcSet="https://techboomers.com/wp-content/uploads/2023/09/sell-concert-tickets-1-200x150.jpg 200w, https://techboomers.com/wp-content/uploads/2023/09/sell-concert-tickets-1-420x315.jpg 420w"
                                     sizes="(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 200px"
                                   />
                                 </div>
                                 <div className="column small-12 medium-8">
                                   <div className="card-divider category-blue" />
                                   <div className="card-section">
-                                    <h5>
-                                      7 Best StubHub Alternatives for Ticket Resales Ranked in 2023
-                                    </h5>
+                                    <h5>10 Best Sites to Sell Concert Tickets Ranked in 2023</h5>
                                   </div>
                                 </div>
                               </div>
@@ -850,7 +845,7 @@ export default function MyMainNav() {
                           </div>
                           <div className="column medium-12 large-8 xlarge-6 show-for-xlarge">
                             <a
-                              href="https://techboomers.com/vivid-seats-vs-ticketmaster"
+                              href="https://techboomers.com/ticketmaster-alternatives"
                               className="card-link"
                             >
                               <div className="row card horizontal collapse card-medium">
@@ -858,12 +853,12 @@ export default function MyMainNav() {
                                   <img
                                     width="200"
                                     height="150"
-                                    src="https://techboomers.com/wp-content/uploads/2023/09/live-event-audience-200x150.jpg"
+                                    src="https://techboomers.com/wp-content/uploads/2023/09/concert-stadium-2-200x150.jpg"
                                     className="attachment-best-card size-best-card wp-post-image"
                                     alt=""
                                     decoding="async"
                                     loading="lazy"
-                                    srcSet="https://techboomers.com/wp-content/uploads/2023/09/live-event-audience-200x150.jpg 200w, https://techboomers.com/wp-content/uploads/2023/09/live-event-audience-420x315.jpg 420w"
+                                    srcSet="https://techboomers.com/wp-content/uploads/2023/09/concert-stadium-2-200x150.jpg 200w, https://techboomers.com/wp-content/uploads/2023/09/concert-stadium-2-420x315.jpg 420w"
                                     sizes="(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 200px"
                                   />
                                 </div>
@@ -871,7 +866,8 @@ export default function MyMainNav() {
                                   <div className="card-divider category-blue" />
                                   <div className="card-section">
                                     <h5>
-                                      Vivid Seats vs Ticketmaster in 2023: Fees, Refunds, & More
+                                      7 Best Ticketmaster Competitors for Ticket Resales Ranked in
+                                      2023
                                     </h5>
                                   </div>
                                 </div>
