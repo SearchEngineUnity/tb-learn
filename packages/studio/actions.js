@@ -29,3 +29,20 @@ export function GatsbyPreviewAction({ published, draft }) {
     },
   };
 }
+
+export function DigitalOceanPreviewAction({ published, draft }) {
+  const doc = draft || published;
+
+  if (!doc) return null;
+
+  const slug = doc?.slug?.current;
+
+  return {
+    disabled: !slug,
+    icon: RiGatsbyLine,
+    label: 'Open Preview',
+    onHandle: () => {
+      window.open(`https://tb-learn-httf5.ondigitalocean.app/${slug}`);
+    },
+  };
+}
