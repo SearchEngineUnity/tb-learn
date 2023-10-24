@@ -1,81 +1,76 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import zero from './assets/rating-stars-grey-background-0-of-5.png';
-import quarter from './assets/rating-stars-grey-background-0.25-of-5.png';
-import half from './assets/rating-stars-grey-background-0.5-of-5.png';
-import threeQuarters from './assets/rating-stars-grey-background-0.75-of-5.png';
-import one from './assets/rating-stars-grey-background-1-of-5.png';
-import onePlusQuarter from './assets/rating-stars-grey-background-1.25-of-5.png';
-import onePlusHalf from './assets/rating-stars-grey-background-1.5-of-5.png';
-import onePlusThreeQuarters from './assets/rating-stars-grey-background-1.75-of-5.png';
-import two from './assets/rating-stars-grey-background-2-of-5.png';
-import twoPlusQuarter from './assets/rating-stars-grey-background-2.25-of-5.png';
-import twoPlusHalf from './assets/rating-stars-grey-background-2.5-of-5.png';
-import twoPlusThreeQuarters from './assets/rating-stars-grey-background-2.75-of-5.png';
-import three from './assets/rating-stars-grey-background-3-of-5.png';
-import threePlusQuarter from './assets/rating-stars-grey-background-3.25-of-5.png';
-import threePlusHalf from './assets/rating-stars-grey-background-3.5-of-5.png';
-import threePlusThreeQuarters from './assets/rating-stars-grey-background-3.75-of-5.png';
-import four from './assets/rating-stars-grey-background-4-of-5.png';
-import fourPlusQuarter from './assets/rating-stars-grey-background-4.25-of-5.png';
-import fourPlusHalf from './assets/rating-stars-grey-background-4.5-of-5.png';
-import fourPlusThreeQuarters from './assets/rating-stars-grey-background-4.75-of-5.png';
-import five from './assets/rating-stars-grey-background-5-of-5.png';
+import ZeroStars from './assets/ZeroStars';
+import QuarterStars from './assets/QuarterStars';
+import HalfStars from './assets/HalfStars';
+import ThreeQurterStars from './assets/ThreeQuarterStars';
+import OneStars from './assets/OneStars';
+import OneQuarterStars from './assets/OneQuarterStars';
+import OneHalfStars from './assets/OneHalfStars';
+import OneThreeQurterStars from './assets/OneThreeQurter';
+import TwoStars from './assets/TwoStars';
+import TwoQuarterStars from './assets/TwoQuarterStars';
+import TwoHalfStars from './assets/TwoHalfStars';
+import TwoThreeQuarterStars from './assets/TwoThreeQuarterStars';
+import ThreeStars from './assets/ThreeStars';
+import ThreeOneQuarterStars from './assets/ThreeOneQuarterStars';
+import ThreeHalfStars from './assets/ThreeHalfStars';
+import ThreeThreeQuarterStars from './assets/ThreeThreeQuarterStars';
+import FourStars from './assets/FourStars';
+import FourQuarterStars from './assets/FourQuarterStars';
+import FourHalfStars from './assets/FourHalfStars';
+import FourThreeQuarterStars from './assets/FourThreeQuarterStars';
+import FiveStars from './assets/FiveStars';
 
 function ProductCardRating({ rating }) {
-  let starRating = zero;
+  let ImageRating;
   if (rating <= 0.124) {
-    starRating = zero;
+    ImageRating = ZeroStars;
   } else if (rating >= 0.125 && rating <= 0.374) {
-    starRating = quarter;
+    ImageRating = QuarterStars;
   } else if (rating >= 0.375 && rating <= 0.624) {
-    starRating = half;
+    ImageRating = HalfStars;
   } else if (rating >= 0.625 && rating <= 0.874) {
-    starRating = threeQuarters;
+    ImageRating = ThreeQurterStars;
   } else if (rating >= 0.875 && rating <= 1.124) {
-    starRating = one;
+    ImageRating = OneStars;
   } else if (rating >= 1.125 && rating <= 1.374) {
-    starRating = onePlusQuarter;
+    ImageRating = OneQuarterStars;
   } else if (rating >= 1.375 && rating <= 1.624) {
-    starRating = onePlusHalf;
+    ImageRating = OneHalfStars;
   } else if (rating >= 1.625 && rating <= 1.874) {
-    starRating = onePlusThreeQuarters;
+    ImageRating = OneThreeQurterStars;
   } else if (rating >= 1.875 && rating <= 2.124) {
-    starRating = two;
+    ImageRating = TwoStars;
   } else if (rating >= 2.125 && rating <= 2.374) {
-    starRating = twoPlusQuarter;
+    ImageRating = TwoQuarterStars;
   } else if (rating >= 2.375 && rating <= 2.624) {
-    starRating = twoPlusHalf;
+    ImageRating = TwoHalfStars;
   } else if (rating >= 2.625 && rating <= 2.874) {
-    starRating = twoPlusThreeQuarters;
+    ImageRating = TwoThreeQuarterStars;
   } else if (rating >= 2.875 && rating <= 3.124) {
-    starRating = three;
+    ImageRating = ThreeStars;
   } else if (rating >= 3.125 && rating <= 3.374) {
-    starRating = threePlusQuarter;
+    ImageRating = ThreeOneQuarterStars;
   } else if (rating >= 3.375 && rating <= 3.624) {
-    starRating = threePlusHalf;
+    ImageRating = ThreeHalfStars;
   } else if (rating >= 3.625 && rating <= 3.874) {
-    starRating = threePlusThreeQuarters;
+    ImageRating = ThreeThreeQuarterStars;
   } else if (rating >= 3.875 && rating <= 4.124) {
-    starRating = four;
+    ImageRating = FourStars;
   } else if (rating >= 4.125 && rating <= 4.374) {
-    starRating = fourPlusQuarter;
+    ImageRating = FourQuarterStars;
   } else if (rating >= 4.375 && rating <= 4.624) {
-    starRating = fourPlusHalf;
+    ImageRating = FourHalfStars;
   } else if (rating >= 4.625 && rating <= 4.874) {
-    starRating = fourPlusThreeQuarters;
+    ImageRating = FourThreeQuarterStars;
   } else {
-    starRating = five;
+    ImageRating = FiveStars;
   }
 
   return (
     <Box component="span">
-      <img
-        src={starRating}
-        alt="star-rating"
-        style={{ verticalAlign: 'middle', height: '24px' }}
-        loading="eager"
-      />
+      <ImageRating />
       <Box component="span" sx={{ px: 1, verticalAlign: 'middle', fontSize: '20px' }}>
         {`${rating.toFixed(1)}`}
       </Box>
