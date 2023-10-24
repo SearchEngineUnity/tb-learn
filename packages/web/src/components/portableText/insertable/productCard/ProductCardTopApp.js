@@ -139,7 +139,7 @@ function ProductCardTopApp({ rating, image, infoList, iosLink, googlePlayLink })
             <CardActionArea
               href={iosLink}
               rel="nofollow"
-              className="product-card__top-btn google-play-btn"
+              className="product-card__top-btn app-store-btn"
             >
               <img src={appStore} alt="App Store" loading="eager" width="100%" />
             </CardActionArea>
@@ -155,7 +155,7 @@ function ProductCardTopApp({ rating, image, infoList, iosLink, googlePlayLink })
             }}
           >
             <CardActionArea
-              href={iosLink}
+              href={googlePlayLink}
               rel="nofollow"
               className="product-card__top-btn google-play-btn"
             >
