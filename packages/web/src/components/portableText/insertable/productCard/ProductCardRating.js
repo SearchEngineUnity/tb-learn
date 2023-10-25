@@ -7,7 +7,7 @@ import ThreeQurterStars from './assets/ThreeQuarterStars';
 import OneStars from './assets/OneStars';
 import OneQuarterStars from './assets/OneQuarterStars';
 import OneHalfStars from './assets/OneHalfStars';
-import OneThreeQurterStars from './assets/OneThreeQurter';
+import OneThreeQurterStars from './assets/OneThreeQurterStars';
 import TwoStars from './assets/TwoStars';
 import TwoQuarterStars from './assets/TwoQuarterStars';
 import TwoHalfStars from './assets/TwoHalfStars';

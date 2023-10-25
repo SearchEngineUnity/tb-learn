@@ -22,8 +22,8 @@
     "@mui/styled-engine-sc": "^5.12.0",
     "@sanity/color-input": "^3.1.0",
     "@sanity/dashboard": "^3.1.5",
-    "@sanity/ui": "^1.7.4",
-    "@sanity/vision": "^3.14.5",
+    "@sanity/ui": "^1.8.2",
+    "@sanity/vision": "^3.16.4",
     "get-video-id": "^3.6.5",
     "latest": "^0.2.0",
     "prop-types": "^15.8.1",
@@ -32,13 +32,13 @@
     "react-icons": "^4.8.0",
     "react-is": "^18.2.0",
     "rxjs": "^7.8.1",
-    "sanity": "^3.14.5",
+    "sanity": "^3.16.4",
     "sanity-plugin-dashboard-widget-netlify": "^2.0.1",
     "sanity-plugin-media": "^2.0.5",
     "styled-components": "^5.3.10"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^3.0.0",
+    "@sanity/eslint-config-studio": "^3.0.1",
     "eslint": "^8.6.0",
     "prettier": "^2.8.3",
     "typescript": "^4.0.0"
