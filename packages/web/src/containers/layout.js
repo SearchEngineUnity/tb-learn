@@ -12,7 +12,7 @@ export default function MyLayout({ children, location, type, data, heroImage }) 
     <>
       <Seo {...mapSeoToProps(data, type)} heroImage={heroImage} />
       <Helmet>
-        <script src="https://kit.fontawesome.com/e4a269ffa7.js" crossOrigin="anonymous" async />
+        <script src="https://kit.fontawesome.com/cab226a9e9.js" crossOrigin="anonymous" async />
         <script>
           {`(function(d) {
       var config = {
