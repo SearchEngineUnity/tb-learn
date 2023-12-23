@@ -5,11 +5,9 @@ import { media } from 'sanity-plugin-media';
 import { dashboardTool, projectUsersWidget, projectInfoWidget } from '@sanity/dashboard';
 import { netlifyWidget } from 'sanity-plugin-dashboard-widget-netlify';
 import { colorInput } from '@sanity/color-input';
-// import { gatsbyWidget } from './schemas/components/widgets/gatsbyPreviewWidget';
 import { sanityLimitWidget } from './schemas/components/widgets/sanityLimitWidget';
 import { schemaTypes } from './schemas';
 import deskStructure from './deskStructure';
-// import { GatsbyPreviewAction } from './actions';
 import { DigitalOceanPreviewAction } from './actions';
 
 export default defineConfig({
@@ -37,18 +35,6 @@ export default defineConfig({
           ],
           layout: { width: 'small', height: 'small' },
         }),
-        // gatsbyWidget({
-        //   site: {
-        //     title: 'tb-learn Preview',
-        //     name: 'tb-learn-preview',
-        //     id: 'tb-learn-preview',
-        //     organizationId: 'd7d268c0-3157-4cab-a651-e456e34643bb',
-        //     url: 'https://preview-tblearn.gatsbyjs.io/',
-        //     adminUrl:
-        //       'https://www.gatsbyjs.com/dashboard/d7d268c0-3157-4cab-a651-e456e34643bb/sites/64e0eaa0-6fe3-4311-af21-a8cc9d9d4d1a/cmsPreview',
-        //     buildHookId: '64e0eaa0-6fe3-4311-af21-a8cc9d9d4d1a',
-        //   },
-        // }),
         sanityLimitWidget({ projectId: '2gm63k8m' }),
         projectUsersWidget(),
       ],
