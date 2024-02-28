@@ -1,0 +1,7 @@
+alerts:
+- rule: DEPLOYMENT_STARTED
+- rule: DEPLOYMENT_FAILED
+- rule: DEPLOYMENT_LIVE
+services:
+  health_check:
+    initial_delay_seconds: 150
