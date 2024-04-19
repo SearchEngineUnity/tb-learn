@@ -1,5 +1,3 @@
-const path = require('path');
-
 // Type airtable redirect data - this resolves issue with empty ATT
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
@@ -47,7 +45,7 @@ async function createStructuredPages(actions, graphql) {
       actions.createPage({
         path: page.node.slug.current === '/' ? '/' : `/${page.node.slug.current}`,
         ownerNodeId: page.node.id,
-        component: path.resolve(`./src/templates/structuredPage.js`),
+        component: require.resolve(`./src/templates/structuredPage.js`),
         context: {
           slug: page.node.slug.current,
         },
@@ -106,7 +104,7 @@ async function createFlexListingPages(actions, graphql) {
       if (page?.node?.slug?.current) {
         actions.createPage({
           path: i === 0 ? `/${page.node.slug.current}` : `${page.node.slug.current}/${i + 1}`,
-          component: path.resolve(`./src/templates/flexListingPage.js`),
+          component: require.resolve(`./src/templates/flexListingPage.js`),
           ownerNodeId: page.node.id,
           context: {
             listItemType,
@@ -145,7 +143,7 @@ async function createSoloGuidePages(actions, graphql) {
       actions.createPage({
         path: `/${guide.node.slug.current}`,
         ownerNodeId: guide.node.id,
-        component: path.resolve(`./src/templates/soloGuidePage.js`),
+        component: require.resolve(`./src/templates/soloGuidePage.js`),
         context: {
           slug: guide.node.slug.current,
         },
